@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aastha Nursing Services | Premium Home Healthcare</title>
+    <!-- Prevent flash of wrong theme -->
+    <script>
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Premium Animated Background -->
+    <div class="animated-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="glass-bg-overlay"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Floating Premium Navbar Wrapper -->
+    <div class="nav-wrapper" id="nav-wrapper">
+        <nav class="premium-navbar" id="navbar">
+            <div class="navbar-reflection"></div>
+            <div class="nav-inner">
+                <!-- Left: Logo -->
+                <a href="#home" class="nav-logo">
+                    <img src="assets/logo-aashta.png" alt="Aastha Nursing Services" class="nav-logo-img">
+                </a>
+
+                <!-- Center: Navigation -->
+                <div class="nav-links-container desktop-only">
+                    <div class="active-capsule" id="active-capsule"></div>
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#why-us" class="nav-link">Why Us</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Right: Actions -->
+                <div class="nav-actions">
+                    <button class="theme-toggle morph-toggle" aria-label="Toggle Theme">
+                        <div class="icon-wrapper">
+                            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="5" />
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <a href="#contact" class="btn-book desktop-only ripple">Book Appointment</a>
+                    <button class="hamburger-menu mobile-only" aria-label="Menu">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Dropdown -->
+        <div class="mobile-dropdown glass">
+            <div class="mobile-dropdown-links">
+                <a href="#home" class="mobile-link" style="--i:1;">Home</a>
+                <a href="#about" class="mobile-link" style="--i:2;">About</a>
+                <a href="#services" class="mobile-link" style="--i:3;">Services</a>
+                <a href="#why-us" class="mobile-link" style="--i:4;">Why Us</a>
+                <a href="#testimonials" class="mobile-link" style="--i:5;">Testimonials</a>
+                <a href="#contact" class="mobile-link" style="--i:6;">Contact</a>
+                <a href="#contact" class="btn-book ripple mt-2" style="--i:7;">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home" aria-label="Hero Section">
+        <!-- Hero Specific Background Layer -->
+        <div class="hero-bg-fx">
+            <div class="noise-overlay"></div>
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+        </div>
+
+        <div class="container hero-container-premium">
+            <div class="hero-grid-premium">
+                <!-- Left Content (45%) -->
+                <div class="hero-left">
+                    <div class="hero-badge glass reveal fade-up">
+                        <span aria-hidden="true" class="badge-icon">🏥</span> Trusted Home Healthcare in Delhi NCR
+                    </div>
+
+                    <h1 class="hero-title reveal blur-up" style="transition-delay: 0.1s;">
+                        Professional Home Nursing & <br>
+                        <span class="text-gradient">Healthcare Services</span><br>
+                        At Your Doorstep
+                    </h1>
+
+                    <p class="hero-subtext reveal slide-up" style="transition-delay: 0.2s;">
+                        Provide compassionate, reliable and certified nursing professionals for elderly care,
+                        physiotherapy, post-operative recovery, critical care and medical equipment — all in the comfort
+                        of your home.
+                    </p>
+
+                    <div class="hero-cta-group reveal slide-up" style="transition-delay: 0.3s;">
+                        <a href="#book" class="btn btn-primary btn-pill magnetic ripple"
+                            aria-label="Book Appointment">Book Appointment</a>
+                        <a href="tel:+91-9310626469" class="btn btn-glass btn-pill magnetic ripple"
+                            aria-label="Call Now">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            Call Now
+                        </a>
+                        <a href="https://wa.me/9310626469" class="btn btn-glass-outline btn-pill magnetic ripple"
+                            aria-label="WhatsApp Consultation">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="hero-rating glass reveal fade-in" style="transition-delay: 0.4s;">
+                        <span class="stars">★★★★★</span> <strong>4.9 Google Rating</strong> <span
+                            class="divider">|</span> 535+ Happy Families
+                    </div>
+                </div>
+
+                <!-- Right Content (55%) -->
+                <div class="hero-right reveal scale-up" style="transition-delay: 0.2s;">
+                    <div class="hero-image-container parallax-el" data-speed="0.04">
+                        <div class="radial-glow"></div>
+
+                        <div class="glass-image-wrapper">
+                            <div class="glass-reflection"></div>
+                            <img src="assets/hero-section.png" alt="Professional Nurse" loading="lazy"
+                                class="main-nurse-img">
+                        </div>
+
+                        <!-- Floating Badges Around Image -->
+                        <div class="premium-badge glass badge-pos-1 float-slow">
+                            <span class="badge-icon">✓</span> Certified Nurses
+                        </div>
+                        <div class="premium-badge glass badge-pos-2 float-med">
+                            24×7 Available
+                        </div>
+                        <div class="premium-badge glass badge-pos-3 float-fast">
+                            <span class="badge-icon">🚑</span> Emergency Home Visit
+                        </div>
+                        <div class="premium-badge glass badge-pos-4 float-slow-alt">
+                            <span class="badge-icon">⭐</span> Trusted by Families
+                        </div>
+                        <div class="premium-badge glass badge-pos-5 float-med-alt">
+                            5+ Years Experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Statistics -->
+            <div class="hero-bottom-stats reveal slide-up" style="transition-delay: 0.4s;">
+                <div class="premium-stat-card glass hover-lift-subtle">
+                    <div class="stat-icon">👨‍⚕️</div>
+                    <div class="stat-info">
+                        <div class="stat-val"><span class="counter" data-target="535">0</span><span>+</span></div>
+                        <p>Happy Families</p>
+                    </div>
+                </div>
+                <div class="premium-stat-card glass hover-lift-subtle">
+                    <div class="stat-icon">🩺</div>
+                    <div class="stat-info">
+                        <div class="stat-val">24×7</div>
+                        <p>Support</p>
+                    </div>
+                </div>
+                <div class="premium-stat-card glass hover-lift-subtle">
+                    <div class="stat-icon">🏠</div>
+                    <div class="stat-info">
+                        <div class="stat-val">Home Care</div>
+                        <p>Across Delhi NCR</p>
+                    </div>
+                </div>
+                <div class="premium-stat-card glass hover-lift-subtle">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <div class="stat-val"><span class="counter" data-target="5">0</span><span>+</span></div>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator premium-scroll">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Premium Trust Marquee -->
+    <section class="trust-marquee-section">
+        <div class="trust-marquee-wrapper glass">
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="marquee-content">
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg> Certified Nurses</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 24×7 Support</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg> Background Verified Staff</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                            <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path>
+                        </svg> Home Healthcare Experts</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect>
+                            <path d="M18 10h4v4"></path>
+                            <circle cx="6" cy="17" r="2"></circle>
+                            <circle cx="14" cy="17" r="2"></circle>
+                            <path d="M10 10v4"></path>
+                            <path d="M8 12h4"></path>
+                        </svg> Emergency Home Visit</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg> Patient First Approach</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg> Trusted Across Delhi NCR</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg> Compassionate Care</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                        </svg> Affordable Packages</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3">
+                            </path>
+                            <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path>
+                            <circle cx="20" cy="10" r="2"></circle>
+                        </svg> Medical Equipment Available</div>
+                    <div class="marquee-sep">✦</div>
+                </div>
+                <!-- Group 2 (Clone for infinite loop) -->
+                <div class="marquee-content" aria-hidden="true">
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg> Certified Nurses</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 24×7 Support</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg> Background Verified Staff</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                            <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path>
+                        </svg> Home Healthcare Experts</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect>
+                            <path d="M18 10h4v4"></path>
+                            <circle cx="6" cy="17" r="2"></circle>
+                            <circle cx="14" cy="17" r="2"></circle>
+                            <path d="M10 10v4"></path>
+                            <path d="M8 12h4"></path>
+                        </svg> Emergency Home Visit</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg> Patient First Approach</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg> Trusted Across Delhi NCR</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg> Compassionate Care</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                        </svg> Affordable Packages</div>
+                    <div class="marquee-sep">✦</div>
+                    <div class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3">
+                            </path>
+                            <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path>
+                            <circle cx="20" cy="10" r="2"></circle>
+                        </svg> Medical Equipment Available</div>
+                    <div class="marquee-sep">✦</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section premium-section relative" aria-label="About Aastha Nursing Services">
+        <!-- Subtle mesh background and blobs -->
+        <div class="about-bg-elements">
+            <div class="blob blob-purple-soft"></div>
+            <div class="blob blob-light-soft"></div>
+            <div class="mesh-overlay"></div>
+        </div>
+
+        <div class="container relative z-10">
+            <div class="about-grid">
+                <!-- Left: Image Area -->
+                <div class="about-left reveal blur-up">
+                    <div class="about-image-wrapper parallax-el" data-speed="0.03">
+                        <div class="about-image-glow"></div>
+
+                        <!-- Floating shapes behind -->
+                        <div class="floating-shape shape-1 float-slow"></div>
+                        <div class="floating-shape shape-2 float-med-alt"></div>
+
+                        <div class="glass-image-container">
+                            <div class="glass-reflection-sweep"></div>
+                            <img src="assets/about-image.png" alt="Compassionate Nursing Care at Home"
+                                class="about-main-img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content Area -->
+                <div class="about-right">
+                    <div class="section-badge glass reveal slide-up" style="transition-delay: 0.1s;">
+                        <span class="badge-dot"></span> ABOUT AASTHA NURSING SERVICES
+                    </div>
+
+                    <h2 class="section-title reveal slide-up" style="transition-delay: 0.2s;">
+                        Compassionate Healthcare,<br>
+                        Professional Nursing,<br>
+                        <span class="text-highlight">Trusted Home Care.</span>
+                    </h2>
+
+                    <div class="section-desc reveal fade-in" style="transition-delay: 0.3s;">
+                        <p>At Aastha Nursing Services, we believe quality healthcare begins with compassion. Our
+                            experienced caregivers, certified nurses and trained professionals deliver personalized
+                            medical support in the comfort of your home across Delhi NCR.</p>
+                        <p>Whether your loved one needs elderly care, post-surgical assistance, physiotherapy, nursing
+                            services or medical equipment, we are committed to providing reliable, dignified and
+                            patient-first care every day.</p>
+                    </div>
+
+                    <div class="about-features reveal slide-up" style="transition-delay: 0.4s;">
+                        <div class="feature-card glass hover-lift-glow">
+                            <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></div>
+                            <span>Certified Professionals</span>
+                        </div>
+                        <div class="feature-card glass hover-lift-glow">
+                            <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></div>
+                            <span>Background Verified Staff</span>
+                        </div>
+                        <div class="feature-card glass hover-lift-glow">
+                            <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></div>
+                            <span>24×7 Support</span>
+                        </div>
+                        <div class="feature-card glass hover-lift-glow">
+                            <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></div>
+                            <span>Personalized Care Plans</span>
+                        </div>
+                    </div>
+
+                    <div class="about-actions reveal slide-up" style="transition-delay: 0.5s;">
+                        <a href="#contact" class="btn btn-primary btn-pill magnetic ripple">Book Free Consultation</a>
+                        <a href="tel:+91-9310626469" class="btn btn-glass btn-pill magnetic ripple">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section premium-section relative" aria-label="Our Services">
+        <!-- Background Elements -->
+        <div class="services-bg-elements">
+            <div class="blob blob-purple-soft" style="top: 15%; left: -5%;"></div>
+            <div class="blob blob-light-soft" style="bottom: 15%; right: -5%;"></div>
+            <div class="mesh-overlay"></div>
+        </div>
+
+        <div class="container relative z-10">
+            <!-- Section Header -->
+            <div class="section-header text-center reveal slide-up">
+                <div class="section-badge glass mx-auto">
+                    <span class="badge-dot"></span> OUR SERVICES
+                </div>
+                <h2 class="section-title">
+                    Complete <span class="text-highlight">Home Healthcare</span><br>
+                    Services at Your Doorstep
+                </h2>
+                <p class="section-desc mx-auto" style="max-width: 700px; margin-top: 1.5rem;">
+                    We provide compassionate, professional and personalized healthcare services across Delhi NCR,
+                    ensuring comfort, dignity and quality care for every patient at home.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card glass reveal blur-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                            <path d="M12 5v14"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Personal Supportive Care</h3>
+                    <p class="service-card-desc">Compassionate caregivers providing daily assistance and long-term home
+                        support.</p>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Live-in Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> 12/24 Hours Care Giving</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Personal Hygiene Assistance</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Alzheimer's & Dementia Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Stroke Management</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card glass reveal blur-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 12c-2.28 0-4-1.72-4-4s1.72-4 4-4 4 1.72 4 4-1.72 4-4 4"></path>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="16" cy="18" r="1"></circle>
+                            <circle cx="8" cy="18" r="1"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Home Physiotherapy</h3>
+                    <p class="service-card-desc">Personalized physiotherapy sessions to improve mobility, recovery and
+                        independence.</p>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Post Surgery Rehabilitation</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Neurological Disorders</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Stroke Rehabilitation</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Respiratory Disorders</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card glass reveal blur-up" style="transition-delay: 0.3s;">
+                    <div class="service-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 12h.01"></path>
+                            <path d="M15 12h.01"></path>
+                            <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
+                            <path
+                                d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 1.5-2.5 1.5c-2.4 0-4.5 1.1-4.5 2.5s1.5 2 4.5 2">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Post Natal Mother & Baby Care</h3>
+                    <p class="service-card-desc">Dedicated care for mothers and newborns during the postnatal recovery
+                        period.</p>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Nanny Services</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Postnatal Mother Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Newborn Infant Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Baby Body Care</li>
+                    </ul>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card glass reveal blur-up" style="transition-delay: 0.4s;">
+                    <div class="service-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Nursing Services</h3>
+                    <p class="service-card-desc">Professional nursing care delivered safely and comfortably at home.</p>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Post Operation Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Administration of IV / IM Injection</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Regular Blood Pressure Monitoring</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Blood Sugar Monitoring</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Post Hospital Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Diabetic Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Geriatric Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Palliative Care</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Respiratory Care at Home</li>
+                    </ul>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card glass reveal blur-up" style="transition-delay: 0.5s;">
+                    <div class="service-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3">
+                            </path>
+                            <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path>
+                            <circle cx="20" cy="10" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Medical Equipment Rental & Sales</h3>
+                    <p class="service-card-desc">Medical equipment delivered to your home with reliable support and
+                        quick availability.</p>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Oxygen Concentrator</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Air Bed</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Medical Cot</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Wheelchair</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Walker</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> BiPAP Machine</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> CPAP Machine</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Suction Machine</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="services-cta glass reveal fade-in" style="transition-delay: 0.6s;">
+                <div class="cta-content">
+                    <h3 class="cta-title">Looking for Professional Home Healthcare?</h3>
+                    <p class="cta-desc">Whether you need nursing care, physiotherapy, elderly care or medical equipment,
+                        our experienced team is ready to assist you at home across Delhi NCR.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-primary btn-pill magnetic ripple">Book Free Consultation</a>
+                    <a href="tel:+91-9310626469" class="btn btn-glass btn-pill magnetic ripple">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-choose-section premium-section relative" aria-label="Why Choose Us">
+        <div class="why-choose-bg-elements">
+            <div class="blob blob-purple-soft" style="top: 30%; right: -5%;"></div>
+            <div class="blob blob-light-soft" style="bottom: 10%; left: -10%;"></div>
+            <div class="mesh-overlay"></div>
+        </div>
+
+        <div class="container relative z-10">
+            <!-- Section Header -->
+            <div class="section-header text-center reveal slide-up" style="max-width: 700px; margin: 0 auto 4rem auto;">
+                <div class="section-badge glass mx-auto">
+                    <span class="badge-dot"></span> WHY CHOOSE US
+                </div>
+                <h2 class="section-title">
+                    Why Families <span class="text-highlight">Trust</span><br>
+                    Aastha Nursing Services
+                </h2>
+                <p class="section-desc">
+                    Professional healthcare delivered with compassion, reliability and personalized attention for every
+                    patient and every family.
+                </p>
+            </div>
+
+            <!-- Premium Bento Grid -->
+            <div class="bento-grid">
+                <!-- Card 1 (Largest) -->
+                <div class="bento-card bento-largest glass hover-lift-glow reveal blur-up"
+                    style="transition-delay: 0.1s;">
+                    <div class="bento-reflection"></div>
+                    <div class="bento-icon-container">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20"></path>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">Certified & Experienced Nurses</h3>
+                        <p class="bento-desc">Our qualified healthcare professionals provide compassionate nursing,
+                            rehabilitation and home healthcare with hospital-level standards, ensuring safe and reliable
+                            care for every patient.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bento-card glass hover-lift-glow reveal blur-up" style="transition-delay: 0.2s;">
+                    <div class="bento-reflection"></div>
+                    <div class="bento-icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">24×7 Availability</h3>
+                        <p class="bento-desc">Healthcare support whenever you need it, including emergency assistance
+                            and long-term care.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bento-card glass hover-lift-glow reveal blur-up" style="transition-delay: 0.3s;">
+                    <div class="bento-reflection"></div>
+                    <div class="bento-icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">Background Verified Staff</h3>
+                        <p class="bento-desc">Every caregiver undergoes careful verification and screening to ensure
+                            your family's safety and complete peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bento-card glass hover-lift-glow reveal blur-up" style="transition-delay: 0.4s;">
+                    <div class="bento-reflection"></div>
+                    <div class="bento-icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">Personalized Care Plans</h3>
+                        <p class="bento-desc">Every patient's healthcare plan is customized according to medical needs,
+                            recovery goals and daily support requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 (Span 2) -->
+                <div class="bento-card bento-span-2 glass hover-lift-glow reveal blur-up"
+                    style="transition-delay: 0.5s;">
+                    <div class="bento-reflection"></div>
+                    <div class="bento-icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">Hospital-Quality Care at Home</h3>
+                        <p class="bento-desc">Receive professional nursing and medical assistance without the stress of
+                            repeated hospital visits.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 (Full Width) -->
+                <div class="bento-card bento-full-width glass hover-lift-glow reveal blur-up"
+                    style="transition-delay: 0.6s;">
+                    <div class="bento-reflection"></div>
+                    <div class="bento-icon-container">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="bento-content">
+                        <h3 class="bento-title">Serving Delhi NCR</h3>
+                        <p class="bento-desc">Fast response, dependable healthcare professionals and trusted home
+                            nursing services across Delhi NCR.</p>
+                        <div class="bento-trust-pills">
+                            <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg> Quick Response</span>
+                            <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg> Compassionate Care</span>
+                            <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg> Trusted by Families</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section premium-section relative" aria-label="Testimonials">
+        <div class="testimonials-bg-elements">
+            <div class="blob blob-purple-soft" style="top: 20%; left: -5%;"></div>
+            <div class="blob blob-light-soft" style="bottom: 20%; right: -5%;"></div>
+            <div class="mesh-overlay"></div>
+        </div>
+
+        <div class="container relative z-10" style="padding-bottom: 2rem;">
+            <!-- Section Header -->
+            <div class="section-header text-center reveal slide-up" style="max-width: 700px; margin: 0 auto 4rem auto;">
+                <div class="section-badge glass mx-auto">
+                    <span class="badge-dot" style="background: var(--primary);"></span> 💜 TESTIMONIALS
+                </div>
+                <h2 class="section-title">
+                    Loved by Families,<br>
+                    <span class="text-highlight">Trusted</span> Every Day
+                </h2>
+                <p class="section-desc">
+                    Real experiences from families who trusted Aastha Nursing Services to care for their loved ones.
+                </p>
+            </div>
+        </div>
+
+        <!-- Infinite Marquee Rows -->
+        <div class="marquee-container reveal fade-in" style="transition-delay: 0.2s;">
+            <!-- Row 1: Moves Left -->
+            <div class="marquee-row marquee-left">
+                <div class="marquee-track">
+                    <!-- SET 1 -->
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Priya Sharma</h4>
+                        <p class="t-review">"The nursing staff cared for my father with genuine compassion and
+                            professionalism. We truly felt supported throughout his recovery."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Rajesh Mehta</h4>
+                        <p class="t-review">"Excellent home nursing service. The caregivers were punctual, experienced
+                            and always respectful. Highly recommended."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Anjali Verma</h4>
+                        <p class="t-review">"Our physiotherapist was incredibly knowledgeable and patient. My mother's
+                            recovery after surgery was much faster than expected."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Neha Kapoor</h4>
+                        <p class="t-review">"The caregiver treated my grandmother with kindness and dignity. We couldn't
+                            have asked for better support."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Amit Gupta</h4>
+                        <p class="t-review">"Professional, reliable and very responsive. The entire booking process was
+                            smooth and hassle-free."</p>
+                    </div>
+                    <!-- SET 2 (Duplicate for infinite loop) -->
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Priya Sharma</h4>
+                        <p class="t-review">"The nursing staff cared for my father with genuine compassion and
+                            professionalism. We truly felt supported throughout his recovery."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Rajesh Mehta</h4>
+                        <p class="t-review">"Excellent home nursing service. The caregivers were punctual, experienced
+                            and always respectful. Highly recommended."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Anjali Verma</h4>
+                        <p class="t-review">"Our physiotherapist was incredibly knowledgeable and patient. My mother's
+                            recovery after surgery was much faster than expected."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Neha Kapoor</h4>
+                        <p class="t-review">"The caregiver treated my grandmother with kindness and dignity. We couldn't
+                            have asked for better support."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Amit Gupta</h4>
+                        <p class="t-review">"Professional, reliable and very responsive. The entire booking process was
+                            smooth and hassle-free."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Moves Right -->
+            <div class="marquee-row marquee-right mt-6">
+                <div class="marquee-track track-right">
+                    <!-- SET 1 -->
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Sandeep Arora</h4>
+                        <p class="t-review">"Medical equipment was delivered quickly and the nursing staff explained
+                            everything clearly. Outstanding service."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Ritu Malhotra</h4>
+                        <p class="t-review">"The team always arrived on time and treated my family with great respect.
+                            Their care made a huge difference."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Manoj Khanna</h4>
+                        <p class="t-review">"We needed post-operative care urgently and Aastha arranged everything
+                            within hours. Excellent experience."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Sunita Verma</h4>
+                        <p class="t-review">"Very caring staff and excellent communication throughout the treatment
+                            period. Thank you for the wonderful support."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Karan Malhotra</h4>
+                        <p class="t-review">"The best home healthcare experience we've had. Skilled professionals and
+                            exceptional service."</p>
+                    </div>
+                    <!-- SET 2 -->
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Sandeep Arora</h4>
+                        <p class="t-review">"Medical equipment was delivered quickly and the nursing staff explained
+                            everything clearly. Outstanding service."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Ritu Malhotra</h4>
+                        <p class="t-review">"The team always arrived on time and treated my family with great respect.
+                            Their care made a huge difference."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Manoj Khanna</h4>
+                        <p class="t-review">"We needed post-operative care urgently and Aastha arranged everything
+                            within hours. Excellent experience."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Sunita Verma</h4>
+                        <p class="t-review">"Very caring staff and excellent communication throughout the treatment
+                            period. Thank you for the wonderful support."</p>
+                    </div>
+                    <div class="testimonial-card glass">
+                        <div class="bento-reflection"></div>
+                        <div class="t-stars">⭐⭐⭐⭐⭐</div>
+                        <h4 class="t-name">Karan Malhotra</h4>
+                        <p class="t-review">"The best home healthcare experience we've had. Skilled professionals and
+                            exceptional service."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container relative z-10" style="margin-top: 5rem;">
+            <!-- Bottom Glass Card -->
+            <div class="t-bottom-card glass text-center reveal slide-up"
+                style="max-width: 800px; margin: 0 auto; transition-delay: 0.4s;">
+                <div class="t-stars-large mb-2" style="font-size: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                <h3 class="t-rating"
+                    style="font-size: 2rem; font-weight: 700; font-family: var(--font-heading); margin-bottom: 0.5rem; color: var(--text-color);">
+                    4.9/5 Average Rating</h3>
+                <p class="t-trusted-text" style="font-size: 1.125rem; color: var(--text-muted); margin-bottom: 2rem;">
+                    Trusted by Hundreds of Families Across Delhi NCR</p>
+
+                <div class="t-divider"
+                    style="height: 1px; width: 100%; background: linear-gradient(90deg, transparent, rgba(47,39,169,0.2), transparent); margin-bottom: 2rem;">
+                </div>
+
+                <p class="t-cta-text"
+                    style="font-size: 1.25rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--text-color);">Book
+                    Your Home Healthcare Consultation Today</p>
+                <div class="cta-actions" style="justify-content: center;">
+                    <a href="#contact" class="btn btn-primary btn-pill magnetic ripple">Book Appointment</a>
+                    <a href="tel:+91-9310626469" class="btn btn-glass btn-pill magnetic ripple">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section premium-section relative" aria-label="Contact Us">
+        <!-- Background Elements -->
+        <div class="contact-bg-elements">
+            <div class="blob blob-purple-soft" style="top: 10%; right: -5%;"></div>
+            <div class="blob blob-light-soft" style="bottom: 10%; left: -10%;"></div>
+            <div class="mesh-overlay"></div>
+        </div>
+
+        <div class="container relative z-10">
+            <!-- Section Header -->
+            <div class="section-header text-center reveal slide-up" style="max-width: 700px; margin: 0 auto 60px auto;">
+                <div class="section-badge glass mx-auto">
+                    <span class="badge-dot"></span> 📞 CONTACT US
+                </div>
+                <h2 class="section-title">
+                    Let's Bring <br>
+                    <span class="text-highlight">Quality Healthcare</span><br>
+                    To Your Home
+                </h2>
+                <p class="section-desc">
+                    Whether you need home nursing, physiotherapy, elderly care or medical equipment, our healthcare
+                    coordinators are ready to assist you.
+                </p>
+            </div>
+
+            <!-- Contact Grid Layout -->
+            <div class="contact-grid">
+                <!-- Left Side: Contact Information -->
+                <div class="contact-left reveal fade-in" style="transition-delay: 0.1s;">
+                    <div class="contact-info-card glass hover-lift-glow">
+                        <div class="bento-reflection"></div>
+
+                        <div class="info-group">
+                            <h4 class="info-label">📞 Phone</h4>
+                            <a href="tel:+919310622475" class="info-value hover-primary">+91 9310622475</a>
+                            <p class="info-subtext">Tap to call.</p>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <div class="info-group">
+                            <h4 class="info-label">💬 WhatsApp</h4>
+                            <a href="https://wa.me/919310622475" class="info-value hover-primary" target="_blank"
+                                rel="noopener noreferrer">+91 9310622475</a>
+                            <p class="info-subtext">Tap to open WhatsApp.</p>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <div class="info-group">
+                            <h4 class="info-label">📧 Email</h4>
+                            <a href="mailto:info@aasthanursingservices.in"
+                                class="info-value hover-primary">info@aasthanursingservices.in</a>
+                            <p class="info-subtext">Tap to open mail app.</p>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <div class="info-group">
+                            <h4 class="info-label">📍 Service Area</h4>
+                            <p class="info-value">Delhi NCR</p>
+                        </div>
+
+                        <div class="info-divider"></div>
+
+                        <div class="info-group">
+                            <h4 class="info-label">🕒 Working Hours</h4>
+                            <p class="info-value">Available 24×7</p>
+                        </div>
+
+                        <!-- Trust Pills -->
+                        <div class="contact-trust-pills mt-4">
+                            <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg> Quick Response</span>
+                            <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg> Certified Professionals</span>
+                            <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg> Home Visit Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact-right reveal slide-up" style="transition-delay: 0.2s;">
+                    <div class="contact-form-card glass">
+                        <div class="bento-reflection"></div>
+
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="name" class="glass-input"
+                                    placeholder="Enter your full name" required aria-required="true">
+                                <span class="error-msg" id="nameError">Please enter your name.</span>
+                            </div>
+
+                            <!-- Phone and Email Row -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phoneNumber" name="phone" class="glass-input"
+                                        placeholder="+91 XXXXX XXXXX" required aria-required="true">
+                                    <span class="error-msg" id="phoneError">Please enter a valid phone number.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailAddress">Email Address <span>(Optional)</span></label>
+                                    <input type="email" id="emailAddress" name="email" class="glass-input"
+                                        placeholder="your@email.com">
+                                    <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                                </div>
+                            </div>
+
+                            <!-- Service & Date Row -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="serviceRequired">Service Required <span
+                                            class="required">*</span></label>
+                                    <div class="select-wrapper">
+                                        <select id="serviceRequired" name="service" class="glass-input glass-select"
+                                            required aria-required="true">
+                                            <option value="" disabled selected>Select a service...</option>
+                                            <option value="Personal Supportive Care">Personal Supportive Care</option>
+                                            <option value="Home Physiotherapy">Home Physiotherapy</option>
+                                            <option value="Post Natal Mother & Baby Care">Post Natal Mother & Baby Care
+                                            </option>
+                                            <option value="Nursing Services">Nursing Services</option>
+                                            <option value="Medical Equipment Rental & Sales">Medical Equipment Rental &
+                                                Sales</option>
+                                        </select>
+                                    </div>
+                                    <span class="error-msg" id="serviceError">Please select a service.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredDate">Preferred Date <span>(Optional)</span></label>
+                                    <input type="date" id="preferredDate" name="date" class="glass-input">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" class="glass-input glass-textarea"
+                                    placeholder="How can we help you?" rows="4" required
+                                    aria-required="true"></textarea>
+                                <span class="error-msg" id="messageError">Please enter your message.</span>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" id="submitBtn"
+                                class="btn btn-primary btn-pill btn-large magnetic ripple w-100 mt-2"
+                                style="justify-content: center;">
+                                <span class="btn-text">Book Consultation</span>
+                                <span class="loading-spinner hidden"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container reveal fade-in" style="transition-delay: 0.4s; margin-top: 5rem;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472061!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1707923456789!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Aastha Nursing Services Location in Delhi NCR">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="glass-footer">
+        <div class="footer-bg-elements">
+            <div class="footer-orb orb-1"></div>
+            <div class="footer-orb orb-2"></div>
+            <div class="footer-noise"></div>
+        </div>
+
+        <div class="container relative z-10">
+            <div class="footer-grid">
+                <!-- Column 1: Company -->
+                <div class="footer-col brand-col reveal slide-up">
+                    <h3 class="footer-logo">Aastha Nursing Services</h3>
+                    <p class="footer-desc">Providing compassionate, professional and reliable home healthcare services
+                        across Delhi NCR with certified caregivers, skilled nurses and personalized medical support.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/919310622475" class="social-btn" aria-label="WhatsApp" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="tel:+919310622475" class="social-btn" aria-label="Phone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="mailto:info@aasthanursingservices.in" class="social-btn" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col reveal slide-up" style="transition-delay: 0.1s;">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Our Services -->
+                <div class="footer-col reveal slide-up" style="transition-delay: 0.2s;">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Personal Supportive Care</a></li>
+                        <li><a href="#services">Home Physiotherapy</a></li>
+                        <li><a href="#services">Post Natal Mother & Baby Care</a></li>
+                        <li><a href="#services">Nursing Services</a></li>
+                        <li><a href="#services">Medical Equipment Rental & Sales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="footer-col reveal slide-up" style="transition-delay: 0.3s;">
+                    <h4 class="footer-title">Contact Information</h4>
+                    <ul class="footer-contact-info">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <a href="tel:+919310622475">+91 9310622475</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:info@aasthanursingservices.in">info@aasthanursingservices.in</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Delhi NCR</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Available 24×7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom reveal fade-in" style="transition-delay: 0.4s;">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2026 Aastha Nursing Services. All Rights Reserved.</p>
+                    <p class="designed-with">Designed with ❤️ for Better Home Healthcare</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top hidden" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container" aria-live="polite">
+        <!-- Success Toast -->
+        <div id="successToast" class="glass-toast toast-success hidden">
+            <div class="toast-icon">✅</div>
+            <div class="toast-content">
+                <h4>Thank you!</h4>
+                <p>We've received your request.<br>Our healthcare coordinator will contact you shortly.</p>
+            </div>
+            <button class="toast-close" aria-label="Close Toast">×</button>
+        </div>
+
+        <!-- Error Toast -->
+        <div id="errorToast" class="glass-toast toast-error hidden">
+            <div class="toast-icon">❌</div>
+            <div class="toast-content">
+                <h4>Something went wrong.</h4>
+                <p>Please try again or call us directly.</p>
+            </div>
+            <button class="toast-close" aria-label="Close Toast">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
